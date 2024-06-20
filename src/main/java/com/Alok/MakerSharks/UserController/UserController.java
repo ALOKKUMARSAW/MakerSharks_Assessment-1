@@ -15,7 +15,7 @@ import com.Alok.MakerSharks.response.LoginResponse;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/addUser")
+@RequestMapping("/user")
 
 
 public class UserController {
@@ -34,7 +34,7 @@ public class UserController {
 	 
 
 
-	   @PostMapping(path = "/login")
+	   @PostMapping("/")
 	   public ResponseEntity<?> loginUser(@RequestBody LoginDto loginDto)
 	   {
 	       LoginResponse LoginResponse = UserService.loginUser(loginDto);
